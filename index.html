@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Nature photography</title>
+<meta charset="UTF-8">
+<title>Nature Photography</title>
+<style>
+  body { margin:0; font-family:sans-serif; }
+  .hero { height: 66vh; display:flex; gap:0px; padding:10px; }
+  .hero img { width: 100%; object-fit:cover; cursor:pointer; }
+  .about { height: 34vh; padding:20px; background:#f0f0f0; }
+</style>
 </head>
+  
 <body>
-  <h1>Hello  and welcome</h1>
-  <p>Lean back, get some tea and enjoy some pictures.</p>
+<div class="hero">
+  <img src="highlight1.jpg" alt="Highlight 1" onclick="window.location='story1.html'">
+  <img src="highlight2.jpg" alt="Highlight 2" onclick="window.location='story2.html'">
+  <img src="highlight3.jpg" alt="Highlight 3" onclick="window.location='story3.html'">
+</div>
+
+<div class="about">
+  <h2>About This Website</h2>
+  <p>Here I show my favorite photography from different trips and projects. Click on the images above to read the stories behind them.</p>
+</div>
+  
 </body>
 </html>
