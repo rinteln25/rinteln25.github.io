@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Story Template</title>
+<style>
+  body { margin:0; font-family:sans-serif; background:#f5f5f5; line-height: 1.6; }
+  .story-container { max-width: 900px; margin: 0 auto; padding: 20px; }
+  .story-container img { width: 100%; height: auto; object-fit: cover; margin: 10px 0; }
+  .caption { font-size: 0.9rem; color: #555; margin-bottom: 20px; }
+  h1 { margin-top:0; }
+  p { margin-bottom: 20px; }
+  a { color: #06470C; text-decoration: none; font-weight: bold; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="story-container">
+
+  <!-- Titel der Story -->
+  <h1>Winter is coming</h1>
+
+  <!-- Erstes Highlight-Bild mit Unterschrift -->
+  <img src="highlight1.jpg" alt="Description of image 1">
+  <div class="caption">Caption for first image</div>
+
+  <!-- Erster Textabschnitt -->
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dies ist ein Beispieltext zu Bild 1. Hier kannst du die Geschichte hinter dem Foto erzählen.
+  </p>
+
+  <!-- Zweites Bild mit Unterschrift -->
+  <img src="highlight2.jpg" alt="Description of image 2">
+  <div class="caption">Caption for second image</div>
+
+  <!-- Zweiter Textabschnitt -->
+  <p>
+    Curabitur at leo eu justo hendrerit imperdiet. Hier kommt der Text für das zweite Bild – weitere Details, Beobachtungen oder Storytelling.
+  </p>
+
+  <!-- Link zurück zur Hauptseite -->
+  <p><a href="index.html">← Back to main page</a></p>
+
+</div>
+
+</body>
+</html>
