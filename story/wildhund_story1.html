@@ -5,7 +5,25 @@
 <title>Wilddogs - skilled hunters of the bush</title>
 <style>
   body { margin:0; font-family:sans-serif; background:#f5f5f5; }
-  .story-container { max-width: 900px; margin: 0 auto; padding: 20px; }
+  .layout {
+    display:flex;
+  }
+  .sidebar{
+    width:15%;
+    padding: 15px;
+    background: #eaeaea;
+  }
+  .sidebar img{
+    width:100%;
+    heigth: 70vh;
+    object-fit:cover;
+  }
+  .story-container { 
+    width: 85%;
+    max-width: 900px; 
+    margin: 0 auto; 
+    padding: 20px; 
+  }
   .story-container h1 {
     text-align: center;
     text-transform: uppercase;
@@ -26,44 +44,48 @@
 </head>
 <body>
 
+<div class="layout>
 
+  <div class="sidebar">
+  <img src="../sticker/wildhund.png" alt="Wilddog">
+</div>  
 
-<div class="story-container">
+  <div class="story-container">
+    <!-- Titel der Story -->
+    <h1>African wilddogs - Skilled hunters of the bush</h1>
   
-<!-- Titel der Story -->
-  <h1>African wilddogs - Skilled hunters of the bush</h1>
-  
-<!-- Erstes Bild mit Unterschrift -->
-<img src="../images/story/Wildhund_Wasser.jpg" alt="What a scene!">
-<div class="caption">A young wilddog at a dam</div>
+    <!-- Erstes Bild mit Unterschrift -->
+    <img src="../images/story/Wildhund_Wasser.jpg" alt="What a scene!">
+    <div class="caption">A young wilddog at a dam</div>
 
-  <!-- Erster Textabschnitt -->
-  <p>
+    <!-- Erster Textabschnitt -->
+    <p>
     It´s an early Tuesday morning, the sun just rose. The air already carries the promises of warmer temperatures but right now it is still chill on the back of the white pick-up truck. 
     Only the birds are singing while every other organism is just waking up or going to sleep. The whole world is covered in a gold and a feeling of peace is filling the atmosphere. 
     The quiet is disturbed by the beeping of the telemetry pointing west. 
     They are somewhere on our left side. Even though we are really trying, the bush is to dense to see any trace of them.
     It´s a surprise we even got a signal at the first try. 
     Our subject? African wilddogs. Fast, kooperative and persistent. You cannot find more successful hunters here. 
-  </p>
+    </p>
 
- <!-- Zweites Bild mit Unterschrift -->
-  <img src="../images/africa25/wilddog2.jpg">
-  <div class="caption">The scientific name for wilddog is <em>Lycaon pictus</em>
-  </div>
+   <!-- Zweites Bild mit Unterschrift -->
+    <img src="../images/africa25/wilddog2.jpg">
+    <div class="caption">The scientific name for wilddog is <em>Lycaon pictus</em>
+    </div>
   
   
-  <!-- Zweiter Textabschnitt -->
-  <p>
-    And then suddenly, they are right in fron of the car. Pacing closer like ghosts in the morning sun. Is is so beautifl that reality is tearing apart. This cannot be real. But it is. 
-    Only a few seconds and they are gone again. Back into the bush. Like they had not been here at all. But the reverent silence prooves otherwise and tells of their presence. 
-    More minutes pass during which the whole world comes to a halt, times slowes. And begins to race as soon as they are found again.
+    <!-- Zweiter Textabschnitt -->
+    <p>
+      And then suddenly, they are right in fron of the car. Pacing closer like ghosts in the morning sun. Is is so beautifl that reality is tearing apart. This cannot be real. But it is. 
+      Only a few seconds and they are gone again. Back into the bush. Like they had not been here at all. But the reverent silence prooves otherwise and tells of their presence. 
+      More minutes pass during which the whole world comes to a halt, times slowes. And begins to race as soon as they are found again.
     
-    At the dam. The whole pack came, all 10 of them!
-  </p>
+      At the dam. The whole pack came, all 10 of them!
+    </p>
 
-  <!-- Link zurück zur Hauptseite -->
-  <p><a href="../index.html">← Back to main page</a></p>
+    <!-- Link zurück zur Hauptseite -->
+    <p><a href="../index.html">← Back to main page</a></p>
+  </div>
 </div>
 
 <script src="../script.js"></script>
