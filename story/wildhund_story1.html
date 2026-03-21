@@ -32,10 +32,6 @@
     object-fit:cover;
     margin-bottom: 20px;
   }
-  /* Bild am unteren Rand der Sidebar */
-  .sidebar img:last-of-type {
-    margin-top: auto;
-  }
   /*Schwarzer Strich nach Logo*/
   .sidebar hr {
     width:100%;
@@ -76,7 +72,7 @@
     text-transform: uppercase;
     margin-bottom: 20px;
   }
-  .story-container img { 
+  .story-container img., story-container video { 
     width: 100%; 
     height: auto; 
     object-fit: cover; 
@@ -89,7 +85,7 @@
 <div class="layout">
 
   <div class="sidebar"> 
-    
+    <div>
     <a href="../index.html">
       <img src="../sticker/Profil.PNG" class="logo" alt="Profil">
     </a>
@@ -97,6 +93,7 @@
     <div class="sidebar-title"> Wilddog </div>
     <div class = "sidebar-text">
       Hier ein paar funfacts über Wilddogs
+    </div>
     </div>
     <img src="../sticker/Wilddog.PNG" alt="Wilddog">
    </div>
@@ -133,6 +130,12 @@
     
       At the dam. The whole pack came, all 10 of them!
     </p>
+
+    <!-- Video eingefügt -->
+    <video controls>
+      <source src="/Users/johannarinteln/Library/CloudStorage/OneDrive-Persönlich/Afrika25/Videos/Wildhunde.mp4" type="video/mp4">
+    </video>
+    
   </div>
 </div>
 
