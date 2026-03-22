@@ -10,6 +10,55 @@
   .layout {
     display:flex;
   }
+
+  /* HEADER */
+.kopfzeile {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background: #CAFF70;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.kopfzeile img {
+  width: 70px;
+}
+
+.kopfzeile .text {
+  display: flex;
+  gap: 80px;
+  margin-left: auto;
+  margin-right: 80px;
+}
+
+.kopfzeile .text a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.kopfzeile .brand {
+  font-weight: 600;
+  margin-right: 40px;
+  color: black;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* SCHWARZER STRICH */
+.divider {
+  position: fixed;
+  top: 70px;
+  width: 100%;
+  height: 6px;
+  background: black;
+}
   .sidebar{
     position:fixed;
     top: 0;
@@ -22,11 +71,6 @@
     justify-content: flex-start;
     align-items: center;
     background: #6E8B3D;
-  }
-  .sidebar .logo{
-    width: 150px;
-    height: auto;
-    margin-bottom: 10px;
   }
   .sidebar img{
     width: 200px;
@@ -103,6 +147,22 @@
 <body>
 
 <div class="layout">
+
+<div class="kopfzeile">
+  <img src="sticker/Profil.PNG">
+
+  <div class="text
+    <span class="brand">rinteln.photography</span>
+    <a href="index.html">home</a>
+    <a href="story.html">storys</a>
+    <a href="animals.html">animals</a>
+    <a href="countries.html">countries</a>
+    <a href="about.html">about</a>
+  </div>
+</div>
+
+<div class="divider"></div>
+
 
   <div class="sidebar"> 
     <a href="../index.html">
