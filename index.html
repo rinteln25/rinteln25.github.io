@@ -64,10 +64,38 @@ body { margin:0; font-family: "Montserrat", sans-serif; }
   max-width: 1200px;
   height: 70vh;
   display: flex;
-  gap: 50px;
+  gap: 10px;
 }
 
-.hero img {
+.hero-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  display: block;
+}
+
+.hero-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  box-sizing: border-box;
+}
+
+  .hero img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -77,6 +105,7 @@ body { margin:0; font-family: "Montserrat", sans-serif; }
 .hero img:nth-child(2){
   object-position: center;
 }
+
 </style>
 </head>
 
@@ -100,10 +129,19 @@ body { margin:0; font-family: "Montserrat", sans-serif; }
 
 <div class="hero-wrapper">
   <div class="hero">
+    <div class="hero-item">
     <img src="images/story/Wildhund_Wasser.jpg" onclick="window.location='story/wildhund_story1.html'">
-    <img src="images/story/flughund.jpg" onclick="window.location='story/story2.html'">
-    <img src="images/story/fuchs.jpg" onclick="window.location='story/story3.html'">
-  </div>
+    <div class="hero-title">Wilddogs - skilled hunters of the bush</div>
+    </div>
+    <div class="hero-item">
+      <img src="images/story/flughund.jpg" onclick="window.location='story/story2.html'">
+      <div class="hero-title">Flying foxes in Tom Price</div>
+    </div>
+    <div class="hero-item">
+      <img src="images/story/fuchs.jpg" onclick="window.location='story/story3.html'">
+      <div class="hero-title">Fox in the winter landscape</div>
+    </div>
+   </div>
 </div>
 
 </div>
