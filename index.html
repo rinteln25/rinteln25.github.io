@@ -7,59 +7,34 @@
 <title>Nature Photography</title>
   
 <style>
-  body { margin:0; font-family: "Montserrat", sans-serif; }
-  
-  .layout {
-    display:flex;
-    flex-direction: column;
-  }
-  
-  .hero { height: 80vh; 
-         display:flex; 
-         gap:0px; 
-         padding:0px; 
-          maring-top: 10hv;
-        }
-  
-  .hero img { 
-    width: 100%; 
-    height: auto; 
-    object-fit: cover; 
-    cursor: pointer; 
-    display: block; 
-  }
-  .hero img:nth-child(1){
-    object-position: center;
-  }
-  .hero img:nth-child(2){
-    object-posistion: center;
-  }
-  .hero img:nth-child(3) {
-    object-position: bottom;
-  }
+body { margin:0; font-family: "Montserrat", sans-serif; }
 
-  .kopfzeile img {
-    width: 150px;
-    height: auto;
-    margin-bottom: 10px;
-  }
-  
-  .kopfzeile {
-              position: fixed; 
-              top: 0; 
-              width: 100%; 
-              heigth: 5vh; 
-              background: #CAFF70; 
-              display: flex;
-              align-items: center;
-             }
- 
-  .kopfzeile .text {
+.layout {
+  display:flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+.kopfzeile {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background: #CAFF70;
   display: flex;
-  gap: 40px;           /* gleichmäßiger Abstand */
-  margin-left: auto;   /* schiebt Menü nach rechts */
-  margin-right: 40px;
   align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.kopfzeile img {
+  width: 120px;
+}
+
+.kopfzeile .text {
+  display: flex;
+  gap: 40px;
+  margin-left: auto;
 }
 
 .kopfzeile .text a {
@@ -68,38 +43,67 @@
   font-weight: 500;
 }
 
-/*Schwarzer Strich nach Logo*/
-  .kopfzeile hr {
-    width:100%;
-    border:none;
-    border-top: 4px solid black;
-    margin: 20px 0;
-    color: #FFFFFF;
-  }
+/* SCHWARZER STRICH */
+.divider {
+  position: fixed;
+  top: 70px;
+  width: 100%;
+  height: 6px;
+  background: black;
+}
+
+/* HERO CONTAINER */
+.hero-wrapper {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero {
+  width: 80%;
+  max-width: 1200px;
+  height: 70vh;
+  display: flex;
+  gap: 10px;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.hero img:nth-child(2){
+  object-position: center;
+}
 </style>
 </head>
 
-  
 <body>
   
 <div class="layout">
 
 <div class="kopfzeile">
   <img src="sticker/Profil.PNG">
-  </div>
+
   <div class="text">
-    <a href="index.html">home</a>r 
-    <a href="story.html">storys</a> 
+    <a href="index.html">home</a>
+    <a href="story.html">storys</a>
     <a href="animals.html">animals</a>
     <a href="countries.html">countries</a>
     <a href="about.html">about</a>
   </div>
 </div>
-<hr>
-<div class="hero">
-  <img src="images/story/Wildhund_Wasser.jpg" alt="wilddog at the water" onclick="window.location='story/wildhund_story1.html'">
-  <img src="images/story/flughund.jpg" alt="flying fox in Tom Price" onclick="window.location='story/story2.html'">
-  <img src="images/story/fuchs.jpg" alt="fox in the snow" onclick="window.location='story/story3.html'">
+
+<div class="divider"></div>
+
+<div class="hero-wrapper">
+  <div class="hero">
+    <img src="images/story/Wildhund_Wasser.jpg" onclick="window.location='story/wildhund_story1.html'">
+    <img src="images/story/flughund.jpg" onclick="window.location='story/story2.html'">
+    <img src="images/story/fuchs.jpg" onclick="window.location='story/story3.html'">
+  </div>
 </div>
 
 </div>
