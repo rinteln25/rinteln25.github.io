@@ -53,16 +53,20 @@
               display: flex;
               align-items: center;
              }
-  
+ 
   .kopfzeile .text {
-    font-size: 18px;
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
-    line-height: 1.5;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    margin-left: 10%;
-  }
+  display: flex;
+  gap: 40px;           /* gleichmäßiger Abstand */
+  margin-left: auto;   /* schiebt Menü nach rechts */
+  margin-right: 40px;
+  align-items: center;
+}
+
+.kopfzeile .text a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 500;
+}
 </style>
 </head>
 
@@ -75,11 +79,11 @@
   <img src="sticker/Profil.PNG">
   </div>
   <div class="text">
-    rinteln.photography 
-    storys 
-    animals
-    countries
-    about
+    <a href="index.html">home</a>r 
+    <a href="story.html">storys</a> 
+    <a href="animals.html">animals</a>
+    <a href="countries.html">countries</a>
+    <a href="about.html">about</a>
   </div>
 </div>
   
