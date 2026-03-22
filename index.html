@@ -2,13 +2,32 @@
 <html lang="en">
 
 <head>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 <meta charset="UTF-8">
 <title>Nature Photography</title>
+  
 <style>
-  body { margin:0; font-family:sans-serif; }
-  .hero { height: 80vh; display:flex; gap:0px; padding:0px; }
-  .hero img { width: 100%; height: auto; object-fit: cover; 
-              cursor: pointer; display: block; }
+  body { margin:0; font-family: "Montserrat", sans-serif; }
+  
+  .layout {
+    display:flex;
+    flex-direction: column;
+  }
+  
+  .hero { height: 80vh; 
+         display:flex; 
+         gap:0px; 
+         padding:0px; 
+          maring-top: 10hv;
+        }
+  
+  .hero img { 
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    cursor: pointer; 
+    display: block; 
+  }
   .hero img:nth-child(1){
     object-position: center;
   }
@@ -18,30 +37,60 @@
   .hero img:nth-child(3) {
     object-position: bottom;
   }
-  .about { position: fixed; bottom: 0; left:0 ; width: 100%;
-          height: 20vh; padding: 20px; background: #6E8B3D; color: #FFFFFF; }
-  .logo {postition: fixed; height: auto; bottom: 20px; left: 20px; object-fit:cover;} 
+
+  .kopfzeile img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .kopfzeile {
+              position: fixed; 
+              top: 0; 
+              width: 100%; 
+              heigth: 10vh; 
+              background: #CAFF70; 
+              display: flex;
+              align-items: center;
+             }
+  
+  .kopfzeile .text {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: 10%;
+  }
 </style>
 </head>
+
   
 <body>
+  
+<div class="layout">
+
+<div class="kopfzeile">
+  <img src="sticker/Profil.PNG">
+  </div>
+  <div class="text">
+    rinteln.photography 
+    storys 
+    animals
+    countries
+    about
+  </div>
+</div>
+  
 <div class="hero">
   <img src="images/story/Wildhund_Wasser.jpg" alt="wilddog at the water" onclick="window.location='story/wildhund_story1.html'">
   <img src="images/story/flughund.jpg" alt="flying fox in Tom Price" onclick="window.location='story/story2.html'">
   <img src="images/story/fuchs.jpg" alt="fox in the snow" onclick="window.location='story/story3.html'">
 </div>
 
-<div class="about">
-  <h2>About This Website</h2>
-  <p> Hello and welcome!
-      Lean back, get some tea and enjoy some pictures to connect with our beautiful nature! 
-      Click on the images above to read the stories behind them.</p>
 </div>
-
-<div class="logo">
-  <img src="sticker/Profil.PNG">
-</div>
-
+  
 <script src="script.js"></script>
 </body>
 </html>
