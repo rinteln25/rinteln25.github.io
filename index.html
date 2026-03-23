@@ -130,6 +130,13 @@ body { margin:0; font-family: "Montserrat", sans-serif; }
     font-size: 32px;
   }
 
+/* Wrapper für Cards */
+.album-cards-wrapper {
+  display: flex;
+  gap: 30px;
+  justify-content: center; /* zentriert die Cards */
+}
+
 .album-card {
   flex: 1;
   position: relative;
@@ -197,8 +204,9 @@ body { margin:0; font-family: "Montserrat", sans-serif; }
 </div>
 
   <div class="album-section">
-  <h1 class="album-title-header">Albums></h1>
+  <h1 class="album-title-header">Albums</h1>
   
+<div class="album-cards-wrapper">
   <div class="album-card" onclick="window.location='albums/africa25.html'">
     <img id="africa-img">
     <div class="album-title">South Africa 2025</div>
