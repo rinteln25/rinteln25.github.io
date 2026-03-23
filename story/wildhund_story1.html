@@ -22,6 +22,7 @@
   align-items: center;
   padding: 0 20px;
   box-sizing: border-box;
+  z-index: 100;
 }
 
 .kopfzeile img {
@@ -56,6 +57,7 @@
   width: 100%;
   height: 6px;
   background: black;
+  z-index: 1000;
 }
   .sidebar{
     position:fixed;
@@ -101,11 +103,12 @@
   .story-container { 
     position: relative;
     margin-left: 27.5%;
-    margin-top: 76px;
+    top: 76px;
     width: 85%;
     max-width: 900px; 
     margin-bottom: 0 auto; 
     padding: 20px; 
+    z-index: 1;
   }
   .story-container h1 {
     text-align: center;
