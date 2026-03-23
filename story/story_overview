@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<title>Nature Photography</title>
+  
+<style>
+body { margin:0; font-family: "Montserrat", sans-serif; }
+
+.layout {
+  display:flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+.kopfzeile {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background: #CAFF70;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index:200;
+}
+
+.kopfzeile img {
+  width: 70px;
+}
+
+.kopfzeile .text {
+  display: flex;
+  gap: 80px;
+  margin-left: auto;
+  margin-right: 80px;
+}
+
+.kopfzeile .text a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.kopfzeile .brand {
+  font-weight: 600;
+  margin-right: 40px;
+  color: black;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* SCHWARZER STRICH */
+.divider {
+  position: fixed;
+  top: 70px;
+  width: 100%;
+  height: 6px;
+  background: black;
+  z-index:99;
+}
+
+.story-list {
+  width: 70%;
+  max-width: 1000px;
+  margin: 120px auto 60px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.story-card {
+  display: flex;
+  gap: 25px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.story-card img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.story-preview h2 {
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.story-preview p {
+  margin: 0;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+/* Hover Effekt */
+.story-card:hover img {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+
+.story-card:hover h2 {
+  text-decoration: underline;
+}
+
+
+</style>
+</head>
+
+<body>
+  
+<div class="layout">
+
+<div class="kopfzeile">
+  <img src="sticker/Profil.PNG">
+
+  <div class="text">
+    <span class="brand">rinteln.photography</span>
+    <a href="index.html">home</a>
+    <a href="story.html">storys</a>
+    <a href="animals.html">animals</a>
+    <a href="countries.html">countries</a>
+    <a href="about.html">about</a>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="story-list">
+
+  <div class="story-card" onclick="window.location='story/wildhund_story1.html'">
+    <img src="images/story/Wildhund_Wasser.jpg" alt="Wilddog">
+
+    <div class="story-preview">
+      <h2>African wilddogs – Skilled hunters of the bush</h2>
+      <p>
+        It’s an early Tuesday morning, the sun just rose. The air already carries the promise of warmth...
+      </p>
+    </div>
+  </div>
+
+  <!-- Weitere Story -->
+  <div class="story-card" onclick="window.location='story/story2.html'">
+    <img src="images/story/flughund.jpg">
+
+    <div class="story-preview">
+      <h2>Flying foxes in Tom Price</h2>
+      <p>
+        As the sun sets, thousands of flying foxes rise into the sky...
+      </p>
+    </div>
+  </div>
+
+</div>
