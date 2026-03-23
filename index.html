@@ -109,6 +109,46 @@ body { margin:0; font-family: "Montserrat", sans-serif; }
   text-transform: uppercase;
 }
 
+
+.album-section {
+  width: 70%;
+  max-width: 1200px;
+  margin: 60px auto;
+  display: flex;
+  gap: 30px;
+}
+
+.album-card {
+  flex: 1;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.album-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.album-card:hover img {
+  transform: scale(1.05);
+}
+
+.album-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+}
+
 </style>
 </head>
 
@@ -119,7 +159,7 @@ body { margin:0; font-family: "Montserrat", sans-serif; }
 <div class="kopfzeile">
   <img src="sticker/Profil.PNG">
 
-  <div class="text
+  <div class="text">
     <span class="brand">rinteln.photography</span>
     <a href="index.html">home</a>
     <a href="story.html">storys</a>
@@ -146,6 +186,25 @@ body { margin:0; font-family: "Montserrat", sans-serif; }
       <div class="hero-title">Fox in the winter landscape</div>
     </div>
    </div>
+</div>
+
+  <div class="album-section">
+
+  <div class="album-card" onclick="window.location='albums/africa.html'">
+    <img src="images/albums/africa_cover.jpg" alt="Africa Album">
+    <div class="album-title">Africa</div>
+  </div>
+
+  <div class="album-card" onclick="window.location='albums/europe.html'">
+    <img src="images/albums/europe_cover.jpg" alt="Europe Album">
+    <div class="album-title">Europe</div>
+  </div>
+
+  <div class="album-card" onclick="window.location='albums/australia.html'">
+    <img src="images/albums/australia_cover.jpg" alt="Australia Album">
+    <div class="album-title">Australia</div>
+  </div>
+
 </div>
 
 </div>
