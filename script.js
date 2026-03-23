@@ -21,9 +21,9 @@ setRandomImage("africa-img", [
 ]);
 
 setRandomImage("australia-img", [
-  "images/australia/humpbak.jpg",
-  "images/australia/kokaburra.jpg",
-  "images/australia/fisheagle.jpg"
+  "australia/humpbak.jpg",
+  "australia/kokaburra.jpg",
+  "australia/fisheagle.jpg"
 ]);
 
 
