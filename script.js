@@ -25,3 +25,5 @@ setRandomImage("australia-img", [
   "images/australia/kokaburra.jpg",
   "images/australia/fisheagle.jpg"
 ]);
+
+
