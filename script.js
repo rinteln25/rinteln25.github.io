@@ -20,7 +20,7 @@ setRandomImage("africa-img", [
   "images/africa25/Geparden.jpg"
 ]);
 
-setRandomImage("europe-img", [
+setRandomImage("australia-img", [
   "images/australia/humpbak.jpg",
   "images/australia/kokaburra.jpg",
   "images/australia/fisheagle.jpg"
