@@ -10,11 +10,60 @@
   .layout {
     display:flex;
   }
+
+  /* HEADER */
+.kopfzeile {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background: #CAFF70;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+.kopfzeile img {
+  width: 70px;
+}
+
+.kopfzeile .text {
+  display: flex;
+  gap: 80px;
+  margin-left: auto;
+  margin-right: 80px;
+}
+
+.kopfzeile .text a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.kopfzeile .brand {
+  font-weight: 600;
+  margin-right: 40px;
+  color: black;
+  font-family: "Oswald", sans-serif;
+}
+
+/* SCHWARZER STRICH */
+.divider {
+  position: fixed;
+  top: 70px;
+  width: 100%;
+  height: 6px;
+  background: black;
+  z-index: 99;
+}
   .sidebar{
     position:fixed;
-    top: 0;
-    left:0;
-    height: 100vh;
+    top: 76px;
+    left: 0;
+    height: calc(100vh - 76px);
     width:15%;
     padding: 15px;
     display: flex;
@@ -23,25 +72,13 @@
     align-items: center;
     background: #6E8B3D;
   }
-  .sidebar .logo{
-    width: 150px;
-    height: auto;
-    margin-bottom: 10px;
-  }
   .sidebar img{
     width: 200px;
     height: auto;
     object-fit:cover;
     margin-bottom: 20px;
   }
-  /*Schwarzer Strich nach Logo*/
-  .sidebar hr {
-    width:100%;
-    border:none;
-    border-top: 4px solid black;
-    margin: 20px 0;
-    color: #FFFFFF;
-  }
+
   /*Überschrift-Text in der Sidebar*/
   .sidebar .sidebar-title{
     font-size: 18px;
@@ -50,6 +87,7 @@
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 5px;
+    margin-top: 20px;
     color: #FFFFFF;
   }
   /* Text unter der Überschrift */
@@ -59,15 +97,18 @@
     text-align: center;
     line-height: 1.5;
     margin-bottom: 5px;
-    margin-top: 5px;
+    margin-top: 10px;
     color: #FFFFFF;
   }
   .story-container { 
+    position: relative;
     margin-left: 27.5%;
-    width: 80%;
+    padding-top: 76px;
+    width: 85%;
     max-width: 900px; 
     margin-bottom: 0 auto; 
     padding: 20px; 
+    z-index: 1;
   }
   .story-container h1 {
     text-align: center;
@@ -76,18 +117,21 @@
     font-weight: 500;
     letter-spacing: 2px;
     font-size: 32px;
+    z-index: 1;
   }
   .story-container p {
     line-height: 1.5;
     margin-bottom: 20px;
     font-size: 18px;
     font-weight: 300;
+    z-index: 1;
   }
   .story-container img { 
     width: 100%; 
     height: auto; 
     object-fit: cover; 
     margin-bottom: 10px 0; 
+    z-index: 1;
   }
   .caption {
     font-familiy:"Montserrat", sans-serif;
@@ -97,6 +141,7 @@
     margin-top: 20px;
     line-height: 1;
     font-weight: 300;
+    z-index: 1;
   }
 </style>
 </head>
@@ -104,11 +149,24 @@
 
 <div class="layout">
 
+<div class="kopfzeile">
+  <img src="../sticker/Profil.PNG">
+
+  <div class="text">
+    <span class="brand">rinteln.photography</span>
+    <a href="../index.html">home</a>
+    <a href="story.html">storys</a>
+    <a href="animals.html">animals</a>
+    <a href="countries.html">countries</a>
+    <a href="about.html">about</a>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+
   <div class="sidebar"> 
-    <a href="../index.html">
-      <img src="../sticker/Profil.PNG" class="logo" alt="Profil">
-    </a>
-    <hr>
+
     <div class="sidebar-title"> African Wilddog </div>
     <div class = "sidebar-text">
       Latin name: <em>Lycaon pictus</em> 
@@ -203,3 +261,4 @@
 <script src="../script.js"></script>
 </body>  
 </html>
+
