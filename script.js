@@ -26,4 +26,8 @@ setRandomImage("australia-img", [
   "australia/fisheagle.jpg"
 ]);
 
-
+setRandomImage("southern_germany-img", [
+  "images/Southern Germany/Bienenfresser.jpg",
+  "images/Southern Germany/Wasseramsel.jpg",
+  "images/Southern Germany/Schmetterlinge/Tagpfauenauge.jpg"
+  ]);
