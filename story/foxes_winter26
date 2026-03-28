@@ -103,7 +103,7 @@
   .story-container { 
     position: relative;
     margin-left: 27.5%;
-    padding-top: 76px;
+    margin-top: 76px;
     width: 85%;
     max-width: 900px; 
     margin-bottom: 0 auto; 
@@ -167,42 +167,42 @@
 
   <div class="sidebar"> 
 
-    <div class="sidebar-title"> African Wilddog </div>
+    <div class="sidebar-title"> Red fox </div>
     <div class = "sidebar-text">
-      Latin name: <em>Lycaon pictus</em> 
+      Latin name: <em>Vulpes vulpes</em> 
       <br>
       Family: Canidae 
       <br>
       <br>
-      Occurence: Zimbabwe, Zambia, South Africa, Tanzania, Namibia, Mozambique, Botswana, Kenya
+      Occurence: Asia, Europe, North America, Northern Africa, (Australia)
       <br>
       <br>
-      IUCN Status: endangered
+      IUCN Status: least concern
       <br>
-      only 6600 left
+      population trend stable
       <br>
       <br>
       Wanna know some funfacts?
       <br>
-      1. they are led by an alpha pair
+      1. it´s part of the "World's 100 worst invasive species"
       <br>
-      2. cared for by the whole pack, wild dogs regurgitate food for the pups
+      2. 
       <br>
-      3. packs can consist of 40 members
+      3. 
       <br>
-      4. a pack has on average an 80% success rate at hunting, making them one of Africas most successful predators
+      4. 
     </div>
-    <img src="../sticker/Wilddog.PNG" alt="Wilddog">
+    <img src="../sticker/Fuchs.PNG" alt="Wilddog">
    </div>
     
 
   <div class="story-container">
     <!-- Titel der Story -->
-    <h1>African wilddogs - Skilled hunters of the bush</h1>
+    <h1>A cry for spring</h1>
   
     <!-- Erstes Bild mit Unterschrift -->
-    <img src="../images/story/Wildhund_Wasser.jpg" alt="What a scene!">
-    <div class="caption">A young wilddog at a dam</div>
+    <img src="../images/story/fuchs.jpg" alt="What a scene!">
+    <div class="caption">Fox in the snow - the dream come true for every wildlife photographer</div>
 
     <!-- Erster Textabschnitt -->
     <p>
