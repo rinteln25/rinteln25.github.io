@@ -1,48 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 <meta charset="UTF-8">
-<title>Story Template</title>
+<title>Wilddogs - skilled hunters of the bush</title>
 <style>
-  body { margin:0; font-family:sans-serif; background:#f5f5f5; line-height: 1.6; }
-  .story-container { max-width: 900px; margin: 0 auto; padding: 20px; }
-  .story-container img { width: 100%; height: auto; object-fit: cover; margin: 10px 0; }
-  .caption { font-size: 0.9rem; color: #555; margin-bottom: 20px; }
-  h1 { margin-top:0; }
-  p { margin-bottom: 20px; }
-  a { color: #06470C; text-decoration: none; font-weight: bold; }
-  a:hover { text-decoration: underline; }
+  body { margin: 0; font-family: "Monserrat", sans-serif; background:#f5f5f5; }
+  .layout {
+    display:flex;
+  }
+
+  /* HEADER */
+.kopfzeile {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background: #CAFF70;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+.kopfzeile img {
+  width: 70px;
+}
+
+.kopfzeile .text {
+  display: flex;
+  gap: 80px;
+  margin-left: auto;
+  margin-right: 80px;
+}
+
+.kopfzeile .text a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.kopfzeile .brand {
+  font-weight: 600;
+  margin-right: 40px;
+  color: black;
+  font-family: "Oswald", sans-serif;
+}
+
+/* SCHWARZER STRICH */
+.divider {
+  position: fixed;
+  top: 70px;
+  width: 100%;
+  height: 6px;
+  background: black;
+  z-index: 99;
+}
+  .sidebar{
+    position:fixed;
+    top: 76px;
+    left: 0;
+    height: calc(100vh - 76px);
+    width:15%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: #6E8B3D;
+  }
+  .sidebar img{
+    width: 200px;
+    height: auto;
+    object-fit:cover;
+    margin-bottom: 20px;
+  }
+
+  /*Überschrift-Text in der Sidebar*/
+  .sidebar .sidebar-title{
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    color: #FFFFFF;
+  }
+  /* Text unter der Überschrift */
+  .sidebar .sidebar-text {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    color: #FFFFFF;
+  }
+  .story-container { 
+    position: relative;
+    margin-left: 27.5%;
+    padding-top: 76px;
+    width: 85%;
+    max-width: 900px; 
+    margin-bottom: 0 auto; 
+    padding: 20px; 
+    z-index: 1;
+  }
+  .story-container h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 32px;
+    z-index: 1;
+  }
+  .story-container p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    z-index: 1;
+  }
+  .story-container img { 
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    margin-bottom: 10px 0; 
+    z-index: 1;
+  }
+  .caption {
+    font-familiy:"Montserrat", sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    line-height: 1;
+    font-weight: 300;
+    z-index: 1;
+  }
 </style>
 </head>
 <body>
 
-<div class="story-container">
+<div class="layout">
 
-  <!-- Titel der Story -->
-  <h1>Down under - along Australias east coast</h1>
+<div class="kopfzeile">
+  <img src="../sticker/Profil.PNG">
 
-  <!-- Erstes Highlight-Bild mit Unterschrift -->
-  <img src="highlight1.jpg" alt="Description of image 1">
-  <div class="caption">Caption for first image</div>
-
-  <!-- Erster Textabschnitt -->
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dies ist ein Beispieltext zu Bild 1. Hier kannst du die Geschichte hinter dem Foto erzählen.
-  </p>
-
-  <!-- Zweites Bild mit Unterschrift -->
-  <img src="highlight2.jpg" alt="Description of image 2">
-  <div class="caption">Caption for second image</div>
-
-  <!-- Zweiter Textabschnitt -->
-  <p>
-    Curabitur at leo eu justo hendrerit imperdiet. Hier kommt der Text für das zweite Bild – weitere Details, Beobachtungen oder Storytelling.
-  </p>
-
-  <!-- Link zurück zur Hauptseite -->
-  <p><a href="index.html">← Back to main page</a></p>
-
+  <div class="text">
+    <span class="brand">rinteln.photography</span>
+    <a href="../index.html">home</a>
+    <a href="story.html">storys</a>
+    <a href="animals.html">animals</a>
+    <a href="countries.html">countries</a>
+    <a href="about.html">about</a>
+  </div>
 </div>
 
-</body>
+<div class="divider"></div>
+
+
+  <div class="sidebar"> 
+
+    <div class="sidebar-title"> African Wilddog </div>
+    <div class = "sidebar-text">
+      Latin name: <em>Lycaon pictus</em> 
+      <br>
+      Family: Canidae 
+      <br>
+      <br>
+      Occurence: Zimbabwe, Zambia, South Africa, Tanzania, Namibia, Mozambique, Botswana, Kenya
+      <br>
+      <br>
+      IUCN Status: endangered
+      <br>
+      only 6600 left
+      <br>
+      <br>
+      Wanna know some funfacts?
+      <br>
+      1. they are led by an alpha pair
+      <br>
+      2. cared for by the whole pack, wild dogs regurgitate food for the pups
+      <br>
+      3. packs can consist of 40 members
+      <br>
+      4. a pack has on average an 80% success rate at hunting, making them one of Africas most successful predators
+    </div>
+    <img src="../sticker/Wilddog.PNG" alt="Wilddog">
+   </div>
+    
+
+  <div class="story-container">
+    <!-- Titel der Story -->
+    <h1>African wilddogs - Skilled hunters of the bush</h1>
+  
+    <!-- Erstes Bild mit Unterschrift -->
+    <img src="../images/story/Wildhund_Wasser.jpg" alt="What a scene!">
+    <div class="caption">A young wilddog at a dam</div>
+
+    <!-- Erster Textabschnitt -->
+    <p>
+    It´s an early Tuesday morning, the sun just rose. The air already carries the promises of warmer temperatures but right now it is still chill on the back of the white pick-up truck. 
+    Only the birds are singing while every other organism is just waking up or going to sleep. The whole world is covered in a gold and a feeling of peace is filling the atmosphere. 
+    The quiet is disturbed by the beeping of the telemetry pointing west. <br>
+    <br>
+    They are somewhere on our left side. Even though we are really trying, the bush is to dense to see any trace of them.
+    It´s a surprise we even got a signal at the first try. <br>
+    Our subject? African wilddogs. Fast, kooperative and persistent. You cannot find more successful hunters here. 
+    </p>
+
+   <!-- Zweites Bild mit Unterschrift -->
+    <img src="../images/africa25/wilddog5.jpg">
+    <div class="caption">The scientific name for wilddog is <em>Lycaon pictus</em> </div>
+  
+  
+    <!-- Zweiter Textabschnitt -->
+    <p>
+    And then suddenly, they are right in fron of the car. Pacing closer like ghosts in the morning sun. Is is so beautifl that reality is tearing apart. This cannot be real. But it is. 
+    Only a few seconds and they are gone again. Back into the bush. Like they had not been here at all. But the reverent silence prooves otherwise and tells of their presence. 
+    More minutes pass during which the whole world comes to a halt, times slowes. And begins to race as soon as they are found again.
+    <br>
+    <br>
+    At the dam. The whole pack came, all 10 of them! 
+    <br>
+    One sighting of these remarkable animals is enough to fall head over heels for them. It is the atmosphere, that is transferred when the whole pack is playing, socializing and just having fun
+    in front of you.
+     </p>
+
+    <!-- Drittes Bild mit Unterschrift -->
+    <img src="../images/africa25/wilddog4.jpg" alt="What a scene!">
+    <div class="caption">One of the puppies playing with a leaf</div>
+
+    <p>
+    Only a few blinks are enough to realize, that each and every one of them has their own unique character with their own quirkyness. Even though they are nagging and teasing each other,
+    their strenght is their numbers, their loyalty to each other, to their family. The whole pack can move as one what makes them able to compete with bigger predators like lions or 
+    hyenas (although they rely on avoiding lions and outnumber hyenas). A well-coordinated team -such as the pack is- is able to hunt down various antelopes thereby regulating the prey density. 
+    And even though in the past, wilddogs did also kill larger prey, it is seen more rarely as prey densities are shrinking with human influences and habitat fragmentation. Therefore packs
+    are getting smaller thus making them more vulnerable in the face of dangers from the bush. 
+    <br>
+    <br>
+    As only 6600 individuals -with only 1400 adults- are left in the wild according to IUCN in 2012, Arican Wilddogs are threatened with extinction. While my eyes are glued on the three pubs in front of me
+    chasing each other around, I refuse to believe that these energetic, cheerful animals will just vanish from these lands as they already did in other regions. But then after quite some time they disappear into
+    the bushes again and in the next second they are gone again. Like ghosts in the warm morning sun.
+      
+    </p>
+
+    <!-- Viertes Bild mit Unterschrift -->
+    <img src="../images/africa25/wilddog2.jpg" alt="What a scene!">
+    <div class="caption">One of the wilddogs is watching out over the others</div>
+     
+  </div>
+</div>
+
+<script src="../script.js"></script>
+</body>  
 </html>
