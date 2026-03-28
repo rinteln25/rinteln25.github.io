@@ -28,6 +28,7 @@ setRandomImage("australia-img", [
 
 setRandomImage("southern_germany-img", [
   "images/Southern Germany/Bienenfresser.jpg",
-  "images/Southern Germany/Wasseramsel.jpg",
-  "images/Southern Germany/Schmetterlinge/Tagpfauenauge.jpg"
+  "images/Southern Germany/Schwarzwald/Wasseramsel.jpg",
+  "images/Southern Germany/Schmetterlinge/Tagpfauenauge.jpg",
+  "images/Southern Germany/Smaragdeidechs.jpg"
   ]);
