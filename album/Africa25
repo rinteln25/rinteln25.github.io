@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>South Africa</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background: #f5f5f5;
+}
+
+.layout {
+  display:flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+.kopfzeile {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background: #CAFF70;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index:200;
+}
+
+.kopfzeile img {
+  width: 70px;
+}
+
+.kopfzeile .text {
+  display: flex;
+  gap: 80px;
+  margin-left: auto;
+  margin-right: 80px;
+}
+
+.kopfzeile .text a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.kopfzeile .brand {
+  font-weight: 600;
+  margin-right: 40px;
+  color: black;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* SCHWARZER STRICH */
+.divider {
+  position: fixed;
+  top: 70px;
+  width: 100%;
+  height: 6px;
+  background: black;
+  z-index:99;
+}
+
+ .header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px auto;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 32px;
+    margin-top: 140px;
+  }
+
+/* Container für EIN Bild */
+.album-item {
+  width: 100%;
+  margin: 50px auto;
+  padding: 40px;
+  background: #ffffff; /* 👉 hier frei änderbar */
+  box-sizing: border-box;
+}
+
+/* Bild */
+.album-item img {
+  width: 90%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Text darunter */
+.caption {
+  width: 90%;
+  margin: 76px auto 20px auto;
+  line-height: 1.5;
+  font-size: 24px;
+  text-align: left;
+  font-weight: 300;
+}
+</style>
+</head>
+
+  
+<body>
+
+<div class="layout">
+
+  <div class="kopfzeile">
+  <img src="../sticker/Profil.PNG">
+
+  <div class="text">
+    <span class="brand">rinteln.photography</span>
+    <a href="../index.html">home</a>
+    <a href="../story/story_overview.html">storys</a>
+    <a href="../animals.html">animals</a>
+    <a href="../countries.html">countries</a>
+    <a href="../about.html">about</a>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="header">
+    <!-- Titel der Story -->
+    <h1>South Africa</h1>
+</div>
+
+<!-- Bild 1 -->
+<div class="album-item" style="background:#6E8B3D;">
+  <img src="../images/africa25/Geparden2.jpg">
+  <div class="caption">Kokaburra is also called "Lachender Hans" because of its characteristic, hysterical laugh. That is a way to mark their territory in the early morning and late afternoons
+  and believe me, when I say, you rarely get a louder alarm clock. </div>
+</div>
+
+<!-- Bild 2 -->
+<div class="album-item" style="background:#f5f5f5;">
+  <img src="../images/africa25/Geier.jpg">
+  <div class="caption">Humpback whales travel alongside the Australian Coast every winter (June-August) to give birth to their calves in the tropical waters further south.
+  Later that year they return to the Antarctican feeding grounds, that bloom with plancton in summer.</div>
+</div>
+
+<!-- Bild 3 -->
+<div class="album-item" style="background:#FFD39B;">
+  <img src="../images/africa25/Giraffen.jpg">
+  <div class="caption">Yardie Creek is one of the most beautiful canyons in Cape Range National Park and habours a lot of animals. Beside of the balck-footed wallaby you can also meet
+  flying foxes, fish eagles and other diverse birds.</div>
+</div>
+
+<!-- Bild 3 -->
+<div class="album-item" style="background:#FFD39B;">
+  <img src="../images/africa25/Hyjänenpub.jpg">
+  <div class="caption">Yardie Creek is one of the most beautiful canyons in Cape Range National Park and habours a lot of animals. Beside of the balck-footed wallaby you can also meet
+  flying foxes, fish eagles and other diverse birds.</div>
+</div>
+
+<!-- Bild 3 -->
+<div class="album-item" style="background:#FFD39B;">
+  <img src="../images/africa25/Wilddog4.jpg">
+  <div class="caption">Yardie Creek is one of the most beautiful canyons in Cape Range National Park and habours a lot of animals. Beside of the balck-footed wallaby you can also meet
+  flying foxes, fish eagles and other diverse birds.</div>
+</div>
+</div>
+
+
+</body>
+</html>
