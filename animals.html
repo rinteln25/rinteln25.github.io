@@ -96,11 +96,27 @@ body {
   font-weight: 500;
 }
 
-.story-preview p {
-  margin: 0;
-  line-height: 1.5;
-  font-weight: 300;
+.genus-row {
+  margin-bottom: 30px;
 }
+
+.genus-row h2 {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.species-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+  
+.species-row img {
+  width: calc(20% - 12px); /* max 5 nebeneinander */
+  height: 150px;
+  object-fit: cover;
+}
+
   
 </style>
 </head>
@@ -110,19 +126,49 @@ body {
   <div class="layout">
 
   <div class="kopfzeile">
-  <img src="../sticker/Profil.PNG">
+  <img src="sticker/Profil.PNG">
 
   <div class="text">
     <span class="brand">rinteln.photography</span>
-    <a href="../index.html">home</a>
-    <a href="../story/story_overview.html">storys</a>
-    <a href="../animals.html">animals</a>
-    <a href="../countries.html">countries</a>
-    <a href="../about.html">about</a>
+    <a href="index.html">home</a>
+    <a href="story/story_overview.html">storys</a>
+    <a href="animals.html">animals</a>
+    <a href="about.html">about</a>
   </div>
 </div>
 
 <div class="divider"></div>
 
+<div class="story-list">
 
+  <!-- Familie -->
+  <h1>Canidae</h1>
+
+  <!-- Gattung -->
+  <div class="genus-row">
+    <h2>Lycaon</h2>
+
+    <div class="species-row">
+      <img src="images/africa25/wilddog4.jpg" alt="Wilddog">
+    </div>
+  </div>
+
+
+  <!-- Familie -->
+  <h1>Cetacea</h1>
+
+  <!-- Gattung -->
+  <div class="genus-row">
+    <h2>Balaenoptera</h2>
+
+    <div class="species-row">
+      <img src="australia/humpback.jpg" alt="Humpback whale">
+    </div>
+  </div>
+
+</div>
+
+<script src="../script.js"></script>
+</body>  
+</html>
 </body>
